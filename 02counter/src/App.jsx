@@ -8,26 +8,25 @@ function App() {
   const addvalue = ()=>{
     console.log("clicked",counter);
     counter=counter+1
-    if(counter<=20)
-    {
+    // if(counter<=20)
+    // {
 
+    // }
       setCounter(counter)
-    }
   }
 
   const subvalue = ()=>{
-    counter=counter-1
-    if(counter>=0)
-      {
+
+    // if(counter>=0)
+    //   {
   
-        setCounter(counter)
-      }
+    //   }
+      setCounter(counter-1)
   }
   return (
     <>
     <h1>Chai aur React</h1>
     <h2>Counter Value : {counter}</h2>
-
     <button onClick={addvalue}>Increase Value {counter}</button>
     <br/>
     <button onClick={subvalue}>Decrease Value {counter}</button>
