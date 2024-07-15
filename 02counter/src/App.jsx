@@ -12,7 +12,11 @@ function App() {
     // {
 
     // }
-      setCounter(counter)
+      // setCounter(counter)
+      setCounter(prevcounter=>prevcounter+1)
+      setCounter(prevcounter=>prevcounter+1)
+      setCounter(prevcounter=>prevcounter+1)
+      setCounter(prevcounter=>prevcounter+1)
   }
 
   const subvalue = ()=>{
