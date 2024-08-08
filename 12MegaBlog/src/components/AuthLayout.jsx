@@ -18,10 +18,10 @@ export default function Protected({children,authentication=true}) {
         // }
         
         //let authValue = authStatus === true ? true : false
-        if(authentication && authstatus!=authentication){
+        if(authentication && authstatus!==authentication){
             navigate("/login")
         }
-        else if(!authentication && authstatus!=authentication){
+        else if(!authentication && authstatus!==authentication){
             navigate("/")
         }
         setloader(false)

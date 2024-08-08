@@ -5,6 +5,7 @@ import authservice from './appwrite/auth'
 import {login,logout} from "./store/authSlice"
 import { Header } from './components'
 import {Footer} from './components'
+import { Outlet } from 'react-router-dom'
 function App() {
   const [loading,setloading] = useState(true)
   const dispatch = useDispatch()
@@ -29,7 +30,7 @@ function App() {
       <Header/>
       <main>
 
-        TODO:{/* {<Outlet/>} */}
+        TODO: <Outlet/>
       </main>
       <Footer/>
     </div>
